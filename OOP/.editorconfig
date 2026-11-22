@@ -7,11 +7,16 @@ dotnet_diagnostic.SA1600.severity = none
 dotnet_diagnostic.SA1633.severity = none
 # Разрешаем писать using вне namespace (современный стандарт C#)
 dotnet_diagnostic.SA1200.severity = none
-
+dotnet_diagnostic.S6562.severity = none
 # Отключаем требование писать this. перед полями класса
 dotnet_diagnostic.SA1101.severity = none
 # Отключаем требование писать стандартный английский текст в конструкторах
 dotnet_diagnostic.SA1642.severity = none
+
+# Отключаем требование начинать описание свойств с английского слова "Gets" (ошибка SA1623)
+dotnet_diagnostic.SA1623.severity = none
+# Отключаем ругань на то, что анализатор не видит XML-файл (ошибка SA0001)
+dotnet_diagnostic.SA0001.severity = none
 
 # В тестах разрешаем длинные имена методов с подчеркиваниями
 [OOP.Tests/**/*.cs]
