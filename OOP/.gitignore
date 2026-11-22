@@ -1,0 +1,13 @@
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+packages/
+*.nupkg
+*.snupkg
+TestResults/
+*.trx
+*.coverage
+*.coveragexml

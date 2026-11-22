@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="OOP.Tests/OOP.Tests.csproj" Id="c47b63f6-0271-42fb-bc4e-038d5e899a1b" />
+  <Project Path="OOP/OOP.csproj" Id="3f8c27d8-cdaf-4517-bd13-4e7d18c36225" />
+</Solution>
