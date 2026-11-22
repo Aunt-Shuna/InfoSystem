@@ -1,0 +1,19 @@
+<Project>
+  <ItemGroup>
+    <!-- Анализатор SonarQube: баги, уязвимости, code smells -->
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="9.32.0.97167" PrivateAssets="all" />
+
+    <!-- Roslynator: рефакторинг, стиль, качество -->
+    <PackageReference Include="Roslynator.Analyzers" Version="4.10.0" PrivateAssets="all" />
+
+    <!-- StyleCop: строгие правила оформления -->
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556" PrivateAssets="all" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <!-- Включить все правила анализаторов на максимальном уровне -->
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <!-- Применять стилевые правила при сборке -->
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+</Project>

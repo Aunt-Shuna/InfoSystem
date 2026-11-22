@@ -2,10 +2,10 @@
   "version": 1,
   "isRoot": true,
   "tools": {
-    "husky": {
-      "version": "0.9.1",
+    "dotnet-reportgenerator-globaltool": {
+      "version": "5.6.1",
       "commands": [
-        "husky"
+        "reportgenerator"
       ],
       "rollForward": false
     }

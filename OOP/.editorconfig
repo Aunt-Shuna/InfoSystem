@@ -1,0 +1,19 @@
+root = true
+
+[*.cs]
+# Отключаем требование писать /// <summary> для каждого метода (для тестов это ад)
+dotnet_diagnostic.SA1600.severity = none
+# Отключаем требование заголовка с копирайтом в начале файла
+dotnet_diagnostic.SA1633.severity = none
+# Разрешаем писать using вне namespace (современный стандарт C#)
+dotnet_diagnostic.SA1200.severity = none
+
+# Отключаем требование писать this. перед полями класса
+dotnet_diagnostic.SA1101.severity = none
+# Отключаем требование писать стандартный английский текст в конструкторах
+dotnet_diagnostic.SA1642.severity = none
+
+# В тестах разрешаем длинные имена методов с подчеркиваниями
+[OOP.Tests/**/*.cs]
+dotnet_diagnostic.SA1300.severity = none
+dotnet_diagnostic.SA1600.severity = none
