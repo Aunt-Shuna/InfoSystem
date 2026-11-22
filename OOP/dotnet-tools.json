@@ -2,10 +2,10 @@
   "version": 1,
   "isRoot": true,
   "tools": {
-    "dotnet-reportgenerator-globaltool": {
-      "version": "5.6.1",
+    "docfx": {
+      "version": "2.81.0",
       "commands": [
-        "reportgenerator"
+        "docfx"
       ],
       "rollForward": false
     }

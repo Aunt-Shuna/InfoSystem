@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: OOP
+  commentId: N:OOP
+  id: OOP
+  children:
+  - OOP.FileAudio
+  - OOP.FileItem
+  - OOP.FileMedia
+  - OOP.FileParseException
+  - OOP.FileParser
+  - OOP.FileStorage
+  - OOP.FileTxt
+  langs:
+  - csharp
+  - vb
+  name: OOP
+  nameWithType: OOP
+  fullName: OOP
+  type: Namespace
+  assemblies:
+  - OOP
+references:
+- uid: OOP.FileAudio
+  commentId: T:OOP.FileAudio
+  href: OOP.FileAudio.html
+  name: FileAudio
+  nameWithType: FileAudio
+  fullName: OOP.FileAudio
+- uid: OOP.FileMedia
+  commentId: T:OOP.FileMedia
+  href: OOP.FileMedia.html
+  name: FileMedia
+  nameWithType: FileMedia
+  fullName: OOP.FileMedia
+- uid: OOP.FileParseException
+  commentId: T:OOP.FileParseException
+  href: OOP.FileParseException.html
+  name: FileParseException
+  nameWithType: FileParseException
+  fullName: OOP.FileParseException
+- uid: OOP.FileParser
+  commentId: T:OOP.FileParser
+  href: OOP.FileParser.html
+  name: FileParser
+  nameWithType: FileParser
+  fullName: OOP.FileParser
+- uid: OOP.FileStorage
+  commentId: T:OOP.FileStorage
+  href: OOP.FileStorage.html
+  name: FileStorage
+  nameWithType: FileStorage
+  fullName: OOP.FileStorage
+- uid: OOP.FileTxt
+  commentId: T:OOP.FileTxt
+  href: OOP.FileTxt.html
+  name: FileTxt
+  nameWithType: FileTxt
+  fullName: OOP.FileTxt
+- uid: OOP.FileItem
+  commentId: T:OOP.FileItem
+  parent: OOP
+  href: OOP.FileItem.html
+  name: FileItem
+  nameWithType: FileItem
+  fullName: OOP.FileItem
+- uid: OOP
+  commentId: N:OOP
+  name: OOP
+  nameWithType: OOP
+  fullName: OOP

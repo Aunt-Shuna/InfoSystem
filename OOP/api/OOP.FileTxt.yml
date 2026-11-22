@@ -1,0 +1,556 @@
+### YamlMime:ManagedReference
+items:
+- uid: OOP.FileTxt
+  commentId: T:OOP.FileTxt
+  id: FileTxt
+  parent: OOP
+  children:
+  - OOP.FileTxt.#ctor(System.String,System.DateTime,System.Int64)
+  - OOP.FileTxt.ExtraInfo
+  - OOP.FileTxt.Serialize
+  - OOP.FileTxt.TypeFile
+  langs:
+  - csharp
+  - vb
+  name: FileTxt
+  nameWithType: FileTxt
+  fullName: OOP.FileTxt
+  type: Class
+  source:
+    remote:
+      path: OOP/OOP/FileTxt.cs
+      branch: main
+      repo: https://github.com/Aunt-Shuna/InfoSystem.git
+    id: FileTxt
+    path: OOP/FileTxt.cs
+    startLine: 7
+  assemblies:
+  - OOP
+  namespace: OOP
+  summary: Представляет текстовый файл.
+  example: []
+  syntax:
+    content: 'public class FileTxt : FileItem'
+    content.vb: Public Class FileTxt Inherits FileItem
+  inheritance:
+  - System.Object
+  - OOP.FileItem
+  inheritedMembers:
+  - OOP.FileItem.FileName
+  - OOP.FileItem.DateCreate
+  - OOP.FileItem.Size
+  - OOP.FileItem.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: OOP.FileTxt.#ctor(System.String,System.DateTime,System.Int64)
+  commentId: M:OOP.FileTxt.#ctor(System.String,System.DateTime,System.Int64)
+  id: '#ctor(System.String,System.DateTime,System.Int64)'
+  parent: OOP.FileTxt
+  langs:
+  - csharp
+  - vb
+  name: FileTxt(string, DateTime, long)
+  nameWithType: FileTxt.FileTxt(string, DateTime, long)
+  fullName: OOP.FileTxt.FileTxt(string, System.DateTime, long)
+  type: Constructor
+  source:
+    remote:
+      path: OOP/OOP/FileTxt.cs
+      branch: main
+      repo: https://github.com/Aunt-Shuna/InfoSystem.git
+    id: .ctor
+    path: OOP/FileTxt.cs
+    startLine: 15
+  assemblies:
+  - OOP
+  namespace: OOP
+  summary: Инициализирует новый экземпляр текстового файла.
+  example: []
+  syntax:
+    content: public FileTxt(string fileName, DateTime dateCreate, long size)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: Имя файла.
+    - id: dateCreate
+      type: System.DateTime
+      description: Дата создания.
+    - id: size
+      type: System.Int64
+      description: Размер в байтах.
+    content.vb: Public Sub New(fileName As String, dateCreate As Date, size As Long)
+  overload: OOP.FileTxt.#ctor*
+  nameWithType.vb: FileTxt.New(String, Date, Long)
+  fullName.vb: OOP.FileTxt.New(String, Date, Long)
+  name.vb: New(String, Date, Long)
+- uid: OOP.FileTxt.TypeFile
+  commentId: P:OOP.FileTxt.TypeFile
+  id: TypeFile
+  parent: OOP.FileTxt
+  langs:
+  - csharp
+  - vb
+  name: TypeFile
+  nameWithType: FileTxt.TypeFile
+  fullName: OOP.FileTxt.TypeFile
+  type: Property
+  source:
+    remote:
+      path: OOP/OOP/FileTxt.cs
+      branch: main
+      repo: https://github.com/Aunt-Shuna/InfoSystem.git
+    id: TypeFile
+    path: OOP/FileTxt.cs
+    startLine: 23
+  assemblies:
+  - OOP
+  namespace: OOP
+  summary: Возвращает тип файла.
+  example: []
+  syntax:
+    content: public override string TypeFile { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property TypeFile As String
+  overridden: OOP.FileItem.TypeFile
+  overload: OOP.FileTxt.TypeFile*
+- uid: OOP.FileTxt.ExtraInfo
+  commentId: M:OOP.FileTxt.ExtraInfo
+  id: ExtraInfo
+  parent: OOP.FileTxt
+  langs:
+  - csharp
+  - vb
+  name: ExtraInfo()
+  nameWithType: FileTxt.ExtraInfo()
+  fullName: OOP.FileTxt.ExtraInfo()
+  type: Method
+  source:
+    remote:
+      path: OOP/OOP/FileTxt.cs
+      branch: main
+      repo: https://github.com/Aunt-Shuna/InfoSystem.git
+    id: ExtraInfo
+    path: OOP/FileTxt.cs
+    startLine: 29
+  assemblies:
+  - OOP
+  namespace: OOP
+  summary: Возвращает дополнительную информацию (для текстового файла отсутствует).
+  example: []
+  syntax:
+    content: public override string ExtraInfo()
+    return:
+      type: System.String
+      description: Пустая строка с переносом.
+    content.vb: Public Overrides Function ExtraInfo() As String
+  overridden: OOP.FileItem.ExtraInfo
+  overload: OOP.FileTxt.ExtraInfo*
+- uid: OOP.FileTxt.Serialize
+  commentId: M:OOP.FileTxt.Serialize
+  id: Serialize
+  parent: OOP.FileTxt
+  langs:
+  - csharp
+  - vb
+  name: Serialize()
+  nameWithType: FileTxt.Serialize()
+  fullName: OOP.FileTxt.Serialize()
+  type: Method
+  source:
+    remote:
+      path: OOP/OOP/FileTxt.cs
+      branch: main
+      repo: https://github.com/Aunt-Shuna/InfoSystem.git
+    id: Serialize
+    path: OOP/FileTxt.cs
+    startLine: 38
+  assemblies:
+  - OOP
+  namespace: OOP
+  summary: Преобразует объект в строку.
+  example: []
+  syntax:
+    content: public override string Serialize()
+    return:
+      type: System.String
+      description: 'Строка формата "Текстовый файл: "имя", дата, размер".'
+    content.vb: Public Overrides Function Serialize() As String
+  overridden: OOP.FileItem.Serialize
+  overload: OOP.FileTxt.Serialize*
+references:
+- uid: OOP
+  commentId: N:OOP
+  name: OOP
+  nameWithType: OOP
+  fullName: OOP
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: OOP.FileItem
+  commentId: T:OOP.FileItem
+  parent: OOP
+  href: OOP.FileItem.html
+  name: FileItem
+  nameWithType: FileItem
+  fullName: OOP.FileItem
+- uid: OOP.FileItem.FileName
+  commentId: P:OOP.FileItem.FileName
+  parent: OOP.FileItem
+  href: OOP.FileItem.html#OOP_FileItem_FileName
+  name: FileName
+  nameWithType: FileItem.FileName
+  fullName: OOP.FileItem.FileName
+- uid: OOP.FileItem.DateCreate
+  commentId: P:OOP.FileItem.DateCreate
+  parent: OOP.FileItem
+  href: OOP.FileItem.html#OOP_FileItem_DateCreate
+  name: DateCreate
+  nameWithType: FileItem.DateCreate
+  fullName: OOP.FileItem.DateCreate
+- uid: OOP.FileItem.Size
+  commentId: P:OOP.FileItem.Size
+  parent: OOP.FileItem
+  href: OOP.FileItem.html#OOP_FileItem_Size
+  name: Size
+  nameWithType: FileItem.Size
+  fullName: OOP.FileItem.Size
+- uid: OOP.FileItem.ToString
+  commentId: M:OOP.FileItem.ToString
+  parent: OOP.FileItem
+  href: OOP.FileItem.html#OOP_FileItem_ToString
+  name: ToString()
+  nameWithType: FileItem.ToString()
+  fullName: OOP.FileItem.ToString()
+  spec.csharp:
+  - uid: OOP.FileItem.ToString
+    name: ToString
+    href: OOP.FileItem.html#OOP_FileItem_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OOP.FileItem.ToString
+    name: ToString
+    href: OOP.FileItem.html#OOP_FileItem_ToString
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: OOP.FileTxt.#ctor*
+  commentId: Overload:OOP.FileTxt.#ctor
+  href: OOP.FileTxt.html#OOP_FileTxt__ctor_System_String_System_DateTime_System_Int64_
+  name: FileTxt
+  nameWithType: FileTxt.FileTxt
+  fullName: OOP.FileTxt.FileTxt
+  nameWithType.vb: FileTxt.New
+  fullName.vb: OOP.FileTxt.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: OOP.FileItem.TypeFile
+  commentId: P:OOP.FileItem.TypeFile
+  parent: OOP.FileItem
+  href: OOP.FileItem.html#OOP_FileItem_TypeFile
+  name: TypeFile
+  nameWithType: FileItem.TypeFile
+  fullName: OOP.FileItem.TypeFile
+- uid: OOP.FileTxt.TypeFile*
+  commentId: Overload:OOP.FileTxt.TypeFile
+  href: OOP.FileTxt.html#OOP_FileTxt_TypeFile
+  name: TypeFile
+  nameWithType: FileTxt.TypeFile
+  fullName: OOP.FileTxt.TypeFile
+- uid: OOP.FileItem.ExtraInfo
+  commentId: M:OOP.FileItem.ExtraInfo
+  parent: OOP.FileItem
+  href: OOP.FileItem.html#OOP_FileItem_ExtraInfo
+  name: ExtraInfo()
+  nameWithType: FileItem.ExtraInfo()
+  fullName: OOP.FileItem.ExtraInfo()
+  spec.csharp:
+  - uid: OOP.FileItem.ExtraInfo
+    name: ExtraInfo
+    href: OOP.FileItem.html#OOP_FileItem_ExtraInfo
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OOP.FileItem.ExtraInfo
+    name: ExtraInfo
+    href: OOP.FileItem.html#OOP_FileItem_ExtraInfo
+  - name: (
+  - name: )
+- uid: OOP.FileTxt.ExtraInfo*
+  commentId: Overload:OOP.FileTxt.ExtraInfo
+  href: OOP.FileTxt.html#OOP_FileTxt_ExtraInfo
+  name: ExtraInfo
+  nameWithType: FileTxt.ExtraInfo
+  fullName: OOP.FileTxt.ExtraInfo
+- uid: OOP.FileItem.Serialize
+  commentId: M:OOP.FileItem.Serialize
+  parent: OOP.FileItem
+  href: OOP.FileItem.html#OOP_FileItem_Serialize
+  name: Serialize()
+  nameWithType: FileItem.Serialize()
+  fullName: OOP.FileItem.Serialize()
+  spec.csharp:
+  - uid: OOP.FileItem.Serialize
+    name: Serialize
+    href: OOP.FileItem.html#OOP_FileItem_Serialize
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: OOP.FileItem.Serialize
+    name: Serialize
+    href: OOP.FileItem.html#OOP_FileItem_Serialize
+  - name: (
+  - name: )
+- uid: OOP.FileTxt.Serialize*
+  commentId: Overload:OOP.FileTxt.Serialize
+  href: OOP.FileTxt.html#OOP_FileTxt_Serialize
+  name: Serialize
+  nameWithType: FileTxt.Serialize
+  fullName: OOP.FileTxt.Serialize
