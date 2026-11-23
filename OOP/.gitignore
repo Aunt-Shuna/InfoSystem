@@ -11,3 +11,8 @@ TestResults/
 *.trx
 *.coverage
 *.coveragexml
+coverage-report/
+html/
+_site/
+api/
+*.docx
