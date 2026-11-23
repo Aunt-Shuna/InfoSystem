@@ -5,7 +5,7 @@ namespace OOP.Benchmarks
 {
     [MemoryDiagnoser]
     [RankColumn]
-    internal class ParserBenchmark
+    public class ParserBenchmark
     {
         private readonly string txtLine = "Текстовый файл: \"document.txt\", 2024.05.13, 1024";
 
